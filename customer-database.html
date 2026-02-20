@@ -1,83 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Database</title>
     <style>
         body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        .header {
-            background-color: #4285F4; /* Google Branding Color */
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header img {
-            height: 50px;
-        }
-        .logout-button {
-            background-color: #db4437; /* Google Red */
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #ffffff; /* White background for table header */
+            background-color: #f2f2f2;
             color: #333;
         }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+        h1 {
+            color: #4285F4; /* Google Blue */
         }
-        tr:hover {
-            background-color: #ddd;
+        h2 {
+            color: #EA4335; /* Google Red */
+        }
+        .customer {
+            background-color: rgba(66,133,244,0.1); /* Tinted Google Blue */
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="path/to/ib_logo.png" alt="IB Logo">
-        <div>
-            <span>Insurance Bazaar.com (Salesmate CRM)</span>
-            <span style="margin-left: 20px;">Agent Vikram Sales Representative</span>
-            <button class="logout-button">Logout</button>
-        </div>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>Customer ID</th>
-                <th>Name</th>
-                <th>Email ID</th>
-                <th>Date of Birth</th>
-                <th>Aadhaar Number</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Sample customer records, replace with actual data -->
-            <tr>
-                <td>1</td>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>1990-01-01</td>
-                <td>1234-5678-9012</td>
-                <td>Active</td>
-            </tr>
-            <!-- Repeat for 20 records -->
-        </tbody>
-    </table>
+    <h1>Customer Database</h1>
+    <img src="https://www.insurancebazaar.com/assets/logo.png" alt="Insurance Bazaar Logo" style="width:200px;">
+    <h2>Indian Customers</h2>
+    <div class="customer"><strong>Name:</strong> Aarav Singh<br><strong>DOB:</strong> 15/06/1990<br><strong>Email:</strong> aarav.singh@example.com<br><strong>Aadhaar Number:</strong> 123456789012</div>
+    <div class="customer"><strong>Name:</strong> Vivaan Sharma<br><strong>DOB:</strong> 22/04/1989<br><strong>Email:</strong> vivaan.sharma@example.com<br><strong>Aadhaar Number:</strong> 123456789013</div>
+    <div class="customer"><strong>Name:</strong> Aditya Mehta<br><strong>DOB:</strong> 10/11/1985<br><strong>Email:</strong> aditya.mehta@example.com<br><strong>Aadhaar Number:</strong> 123456789014</div>
+    <div class="customer"><strong>Name:</strong> Vihaan Joshi<br><strong>DOB:</strong> 07/03/1995<br><strong>Email:</strong> vihaan.joshi@example.com<br><strong>Aadhaar Number:</strong> 123456789015</div>
+    <div class="customer"><strong>Name:</strong> Arjun Kapoor<br><strong>DOB:</strong> 03/12/1980<br><strong>Email:</strong> arjun.kapoor@example.com<br><strong>Aadhaar Number:</strong> 123456789016</div>
+    <div class="customer"><strong>Name:</strong> Reyansh Iyer<br><strong>DOB:</strong> 25/09/1992<br><strong>Email:</strong> reyansh.iyer@example.com<br><strong>Aadhaar Number:</strong> 123456789017</div>
+    <div class="customer"><strong>Name:</strong> Ayaan Gupta<br><strong>DOB:</strong> 18/01/1988<br><strong>Email:</strong> ayaan.gupta@example.com<br><strong>Aadhaar Number:</strong> 123456789018</div>
+    <div class="customer"><strong>Name:</strong> Krish Chawla<br><strong>DOB:</strong> 11/07/1991<br><strong>Email:</strong> krish.chawla@example.com<br><strong>Aadhaar Number:</strong> 123456789019</div>
+    <div class="customer"><strong>Name:</strong> Riaan Verma<br><strong>DOB:</strong> 30/05/1994<br><strong>Email:</strong> riaa.verma@example.com<br><strong>Aadhaar Number:</strong> 123456789020</div>
+    <div class="customer"><strong>Name:</strong> Dhruv Nair<br><strong>DOB:</strong> 09/02/1990<br><strong>Email:</strong> dhruv.nair@example.com<br><strong>Aadhaar Number:</strong> 123456789021</div>
+    <div class="customer"><strong>Name:</strong> Lakshay Patel<br><strong>DOB:</strong> 21/11/1986<br><strong>Email:</strong> lakshay.patel@example.com<br><strong>Aadhaar Number:</strong> 123456789022</div>
+    <div class="customer"><strong>Name:</strong> Ansh Mehta<br><strong>DOB:</strong> 15/08/1985<br><strong>Email:</strong> ansh.mehta@example.com<br><strong>Aadhaar Number:</strong> 123456789023</div>
+    <div class="customer"><strong>Name:</strong> Shreyas Rao<br><strong>DOB:</strong> 02/12/1993<br><strong>Email:</strong> shreyas.rao@example.com<br><strong>Aadhaar Number:</strong> 123456789024</div>
+    <div class="customer"><strong>Name:</strong> Yash Kumar<br><strong>DOB:</strong> 12/03/1991<br><strong>Email:</strong> yash.kumar@example.com<br><strong>Aadhaar Number:</strong> 123456789025</div>
+    <div class="customer"><strong>Name:</strong> Kian Anand<br><strong>DOB:</strong> 29/10/1992<br><strong>Email:</strong> kian.anand@example.com<br><strong>Aadhaar Number:</strong> 123456789026</div>
+    <div class="customer"><strong>Name:</strong> Nivaan Singh<br><strong>DOB:</strong> 27/07/1987<br><strong>Email:</strong> nivaan.singh@example.com<br><strong>Aadhaar Number:</strong> 123456789027</div>
+    <div class="customer"><strong>Name:</strong> Riddhima Sharma<br><strong>DOB:</strong> 14/04/1989<br><strong>Email:</strong> riddhima.sharma@example.com<br><strong>Aadhaar Number:</strong> 123456789028</div>
+    <div class="customer"><strong>Name:</strong> Tanvi Verma<br><strong>DOB:</strong> 23/09/1990<br><strong>Email:</strong> tanvi.verma@example.com<br><strong>Aadhaar Number:</strong> 123456789029</div>
+    <div class="customer"><strong>Name:</strong> Sneha Shah<br><strong>DOB:</strong> 04/01/1996<br><strong>Email:</strong> sneha.shah@example.com<br><strong>Aadhaar Number:</strong> 123456789030</div>
 </body>
 </html>
