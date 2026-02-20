@@ -3,196 +3,81 @@
 <head>
     <title>Customer Database</title>
     <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #4285F4; /* Google Branding Color */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            height: 50px;
+        }
+        .logout-button {
+            background-color: #db4437; /* Google Red */
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
         }
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
+            text-align: left;
         }
         th {
+            background-color: #ffffff; /* White background for table header */
+            color: #333;
+        }
+        tr:nth-child(even) {
             background-color: #f2f2f2;
         }
         tr:hover {
-            background-color: #f5f5f5;
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
-
-<h2>Customer Database</h2>
-
-<table>
-    <tr>
-        <th>Customer ID</th>
-        <th>Name</th>
-        <th>Email ID</th>
-        <th>Date of Birth</th>
-        <th>Aadhaar Number</th>
-        <th>Status</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>John Doe</td>
-        <td>john.doe@example.com</td>
-        <td>1990-01-01</td>
-        <td>1234-5678-9012</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Jane Smith</td>
-        <td>jane.smith@example.com</td>
-        <td>1985-02-02</td>
-        <td>1234-5678-9013</td>
-        <td>Inactive</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Jim Brown</td>
-        <td>jim.brown@example.com</td>
-        <td>1992-03-03</td>
-        <td>1234-5678-9014</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Lucy Grey</td>
-        <td>lucy.grey@example.com</td>
-        <td>1988-04-04</td>
-        <td>1234-5678-9015</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Michael White</td>
-        <td>michael.white@example.com</td>
-        <td>1993-05-05</td>
-        <td>1234-5678-9016</td>
-        <td>Inactive</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Jennifer Green</td>
-        <td>jennifer.green@example.com</td>
-        <td>1987-06-06</td>
-        <td>1234-5678-9017</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>Matthew Blue</td>
-        <td>matthew.blue@example.com</td>
-        <td>1989-07-07</td>
-        <td>1234-5678-9018</td>
-        <td>Inactive</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Emily Black</td>
-        <td>emily.black@example.com</td>
-        <td>1995-08-08</td>
-        <td>1234-5678-9019</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>Oliver Pink</td>
-        <td>oliver.pink@example.com</td>
-        <td>1986-09-09</td>
-        <td>1234-5678-9020</td>
-        <td>Inactive</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>Sophia Silver</td>
-        <td>sophia.silver@example.com</td>
-        <td>1994-10-10</td>
-        <td>1234-5678-9021</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>Daniel Gold</td>
-        <td>daniel.gold@example.com</td>
-        <td>1984-11-11</td>
-        <td>1234-5678-9022</td>
-        <td>Inactive</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>Sarita Red</td>
-        <td>sarita.red@example.com</td>
-        <td>1991-12-12</td>
-        <td>1234-5678-9023</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>Karen Violet</td>
-        <td>karen.violet@example.com</td>
-        <td>1980-01-13</td>
-        <td>1234-5678-9024</td>
-        <td>Inactive</td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td>David Yellow</td>
-        <td>david.yellow@example.com</td>
-        <td>1983-02-14</td>
-        <td>1234-5678-9025</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>15</td>
-        <td>Linda Teal</td>
-        <td>linda.teal@example.com</td>
-        <td>1996-03-15</td>
-        <td>1234-5678-9026</td>
-        <td>Inactive</td>
-    </tr>
-    <tr>
-        <td>16</td>
-        <td>James Brown</td>
-        <td>james.brown@example.com</td>
-        <td>1992-04-16</td>
-        <td>1234-5678-9027</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>17</td>
-        <td>Alice Grey</td>
-        <td>alice.grey@example.com</td>
-        <td>1985-05-17</td>
-        <td>1234-5678-9028</td>
-        <td>Inactive</td>
-    </tr>
-    <tr>
-        <td>18</td>
-        <td>Brian White</td>
-        <td>brian.white@example.com</td>
-        <td>1999-06-18</td>
-        <td>1234-5678-9029</td>
-        <td>Active</td>
-    </tr>
-    <tr>
-        <td>19</td>
-        <td>Gina Black</td>
-        <td>gina.black@example.com</td>
-        <td>1981-07-19</td>
-        <td>1234-5678-9030</td>
-        <td>Inactive</td>
-    </tr>
-    <tr>
-        <td>20</td>
-        <td>Henry Purple</td>
-        <td>henry.purple@example.com</td>
-        <td>1994-08-20</td>
-        <td>1234-5678-9031</td>
-        <td>Active</td>
-    </tr>
-</table>
-
+    <div class="header">
+        <img src="path/to/ib_logo.png" alt="IB Logo">
+        <div>
+            <span>Insurance Bazaar.com (Salesmate CRM)</span>
+            <span style="margin-left: 20px;">Agent Vikram Sales Representative</span>
+            <button class="logout-button">Logout</button>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Customer ID</th>
+                <th>Name</th>
+                <th>Email ID</th>
+                <th>Date of Birth</th>
+                <th>Aadhaar Number</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample customer records, replace with actual data -->
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>1990-01-01</td>
+                <td>1234-5678-9012</td>
+                <td>Active</td>
+            </tr>
+            <!-- Repeat for 20 records -->
+        </tbody>
+    </table>
 </body>
 </html>
