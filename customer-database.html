@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Database</title>
+    <title>InsuranceBazaar Salesmate CRM</title>
     <style>
         body {
+            background-color: #f0f0f0; /* Google branded light tint */
             font-family: Arial, sans-serif;
         }
         header {
-            background: linear-gradient(to right, #4285F4, #34A853);
-            padding: 20px;
-            color: white;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+        }
+        #logo {
+            height: 50px; /* Adjust logo height */
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            margin-top: 20px;
         }
         th, td {
             border: 1px solid #ddd;
@@ -25,55 +30,43 @@
             text-align: left;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #4CAF50; /* Header color */
+            color: white;
         }
         .logout {
-            float: right;
-            margin: 20px;
-            background: #ff5722;
-            color: white;
-            border: none;
-            padding: 10px 15px;
             cursor: pointer;
+            color: red;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Customer Database</h1>
-        <img src="InsuranceBazaarLogo.png" alt="Insurance Bazaar Logo">
-        <button class="logout">Logout</button>
+        <img id="logo" src="path/to/IB-logo.png" alt="IB Logo">
+        <h1>InsuranceBazaar Salesmate CRM</h1>
+        <div class="logout">Logout</div>
     </header>
+    
     <table>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Date of Birth</th>
-            <th>Aadhaar Number</th>
-        </tr>
-        <tr><td>Rajesh Kumar</td><td>rajesh.kumar@example.com</td><td>01/01/1990</td><td>2850 6014 1728</td></tr>
-        <tr><td>Priya Sharma</td><td>priya.sharma@example.com</td><td>02/02/1992</td><td>2032 0320 0566</td></tr>
-        <tr><td>Amit Patel</td><td>amit.patel@example.com</td><td>03/03/1988</td><td>2514 9575 5785</td></tr>
-        <tr><td>Neha Singh</td><td>neha.singh@example.com</td><td>04/04/1995</td><td>2618 9284 9130</td></tr>
-        <tr><td>Vikram Desai</td><td>vikram.desai@example.com</td><td>05/05/1990</td><td>2453 0139 4604</td></tr>
-        <tr><td>Anjali Gupta</td><td>anjali.gupta@example.com</td><td>06/06/1985</td><td>2719 6743 5799</td></tr>
-        <tr><td>Arjun Reddy</td><td>arjun.reddy@example.com</td><td>07/07/1989</td><td>2153 9800 1948</td></tr>
-        <tr><td>Divya Menon</td><td>divya.menon@example.com</td><td>08/08/1993</td><td>2953 4684 1943</td></tr>
-        <tr><td>Rohan Nair</td><td>rohan.nair@example.com</td><td>09/09/1991</td><td>2417 6068 1143</td></tr>
-        <tr><td>Sneha Mishra</td><td>sneha.mishra@example.com</td><td>10/10/1987</td><td>2338 3732 1773</td></tr>
-        <tr><td>Karan Verma</td><td>karan.verma@example.com</td><td>11/11/1994</td><td>2435 2362 4742</td></tr>
-        <tr><td>Pooja Iyer</td><td>pooja.iyer@example.com</td><td>12/12/1986</td><td>2046 0970 7824</td></tr>
-        <tr><td>Sanjay Rao</td><td>sanjay.rao@example.com</td><td>13/01/1990</td><td>2078 5819 0460</td></tr>
-        <tr><td>Meera Chopra</td><td>meera.chopra@example.com</td><td>14/02/1985</td><td>2295 0472 1596</td></tr>
-        <tr><td>Suresh Agarwal</td><td>suresh.agarwal@example.com</td><td>15/03/1983</td><td>9999 4105 7058</td></tr>
-        <tr><td>Ritika Bhat</td><td>ritika.bhat@example.com</td><td>16/04/1988</td><td>9999 7165 8847</td></tr>
-        <tr><td>Nikhil Joshi</td><td>nikhil.joshi@example.com</td><td>17/05/1992</td><td>9999 3311 9405</td></tr>
-        <tr><td>Ananya Dutta</td><td>ananya.dutta@example.com</td><td>18/06/1996</td><td>8384 2795 9970</td></tr>
-        <tr><td>Harsh Malhotra</td><td>harsh.malhotra@example.com</td><td>19/07/1989</td><td>9999 5518 3433</td></tr>
-        <tr><td>Deepika Kapoor</td><td>deepika.kapoor@example.com</td><td>20/08/1991</td><td>9999 9050 1894</td></tr>
+        <thead>
+            <tr>
+                <th>Customer ID</th>
+                <th>Name</th>
+                <th>Aadhaar Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Customer A</td>
+                <td>1234 5678 9101</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Customer B</td>
+                <td>2345 6789 0123</td>
+            </tr>
+            <!-- Add remaining 18 customers here -->
+        </tbody>
     </table>
-    <footer>
-        <p>Agent Vikram</p>
-    </footer>
 </body>
 </html>
