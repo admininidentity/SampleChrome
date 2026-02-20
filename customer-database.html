@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Database - Insurance Bazaar.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #FFD700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+        
+        .agent-info {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .agent-details {
+            line-height: 1.6;
+        }
+        
+        .agent-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .agent-designation {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        
+        .logout-btn {
+            background-color: #FF6B6B;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .logout-btn:hover {
+            background-color: #FF5252;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #1e3c72;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        table thead {
+            background-color: #f8f9fa;
+        }
+        
+        table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #1e3c72;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        table tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .status {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .status.verified {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .status.pending {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        
+        .status.flagged {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">IB</div>
+                <span>Insurance Bazaar.com</span>
+            </div>
+            <div class="agent-info">
+                <div class="agent-details">
+                    <div class="agent-name">Agent Vikram</div>
+                    <div class="agent-designation">Sales Representative</div>
+                </div>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h1>Customer Database</h1>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Name</th>
+                            <th>Email ID</th>
+                            <th>Date of Birth</th>
+                            <th>Aadhaar Number</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>C001</td>
+                            <td>Rajesh Kumar</td>
+                            <td>rajesh@example.com</td>
+                            <td>15/03/1985</td>
+                            <td>2850 6014 1728</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C002</td>
+                            <td>Priya Sharma</td>
+                            <td>priya@example.com</td>
+                            <td>22/07/1990</td>
+                            <td>2032 0320 0566</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C003</td>
+                            <td>Amit Patel</td>
+                            <td>amit@example.com</td>
+                            <td>08/11/1988</td>
+                            <td>2514 9575 5785</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>C004</td>
+                            <td>Neha Singh</td>
+                            <td>neha@example.com</td>
+                            <td>19/05/1992</td>
+                            <td>2618 9284 9130</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C005</td>
+                            <td>Vikram Desai</td>
+                            <td>vikram@example.com</td>
+                            <td>14/09/1987</td>
+                            <td>2453 0139 4604</td>
+                            <td><span class="status flagged">Flagged</span></td>
+                        </tr>
+                        <tr>
+                            <td>C006</td>
+                            <td>Anjali Gupta</td>
+                            <td>anjali@example.com</td>
+                            <td>27/01/1993</td>
+                            <td>2719 6743 5799</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C007</td>
+                            <td>Arjun Reddy</td>
+                            <td>arjun@example.com</td>
+                            <td>11/06/1989</td>
+                            <td>2153 9800 1948</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>C008</td>
+                            <td>Divya Menon</td>
+                            <td>divya@example.com</td>
+                            <td>03/12/1991</td>
+                            <td>2953 4684 1943</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C009</td>
+                            <td>Rohan Nair</td>
+                            <td>rohan@example.com</td>
+                            <td>25/04/1986</td>
+                            <td>2417 6068 1143</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C010</td>
+                            <td>Sneha Mishra</td>
+                            <td>sneha@example.com</td>
+                            <td>18/08/1994</td>
+                            <td>2338 3732 1773</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>C011</td>
+                            <td>Karan Verma</td>
+                            <td>karan@example.com</td>
+                            <td>09/02/1988</td>
+                            <td>2435 2362 4742</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C012</td>
+                            <td>Pooja Iyer</td>
+                            <td>pooja@example.com</td>
+                            <td>30/10/1990</td>
+                            <td>2046 0970 7824</td>
+                            <td><span class="status flagged">Flagged</span></td>
+                        </tr>
+                        <tr>
+                            <td>C013</td>
+                            <td>Sanjay Rao</td>
+                            <td>sanjay@example.com</td>
+                            <td>16/07/1987</td>
+                            <td>2078 5819 0460</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C014</td>
+                            <td>Meera Chopra</td>
+                            <td>meera@example.com</td>
+                            <td>23/03/1989</td>
+                            <td>2295 0472 1596</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>C015</td>
+                            <td>Suresh Agarwal</td>
+                            <td>suresh@example.com</td>
+                            <td>12/05/1985</td>
+                            <td>9999 4105 7058</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C016</td>
+                            <td>Ritika Bhat</td>
+                            <td>ritika@example.com</td>
+                            <td>07/11/1992</td>
+                            <td>9999 7165 8847</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C017</td>
+                            <td>Nikhil Joshi</td>
+                            <td>nikhil@example.com</td>
+                            <td>21/09/1993</td>
+                            <td>9999 3311 9405</td>
+                            <td><span class="status flagged">Flagged</span></td>
+                        </tr>
+                        <tr>
+                            <td>C018</td>
+                            <td>Ananya Dutta</td>
+                            <td>ananya@example.com</td>
+                            <td>14/06/1991</td>
+                            <td>8384 2795 9970</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>C019</td>
+                            <td>Harsh Malhotra</td>
+                            <td>harsh@example.com</td>
+                            <td>05/04/1987</td>
+                            <td>9999 5518 3433</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>C020</td>
+                            <td>Deepika Kapoor</td>
+                            <td>deepika@example.com</td>
+                            <td>28/12/1989</td>
+                            <td>9999 9050 1894</td>
+                            <td><span class="status verified">Verified</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelector('.logout-btn').addEventListener('click', function() {
+            if (confirm('Are you sure you want to logout?')) {
+                alert('Logging out...');
+                // Redirect to login page
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>
